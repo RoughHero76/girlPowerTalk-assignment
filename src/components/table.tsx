@@ -200,7 +200,7 @@ const Table: React.FC<{ data: TableData[] }> = ({ data }) => {
                                 {headerGroup.headers.map((column) => (
                                     <th
                                         {...column.getHeaderProps(column.getSortByToggleProps())}
-                                        className="px-4 py-2 text-left bg-custom-color border border-gray-400"
+                                        className={`px-4 py-2 text-left border border-gray-400 ${column.isSorted ? 'bg-blue-200' : 'bg-custom-color'}`}
                                     >
                                         <div className="flex items-center">
                                             {column.render('Header')}
@@ -209,6 +209,7 @@ const Table: React.FC<{ data: TableData[] }> = ({ data }) => {
                                             </span>
                                         </div>
                                     </th>
+
                                 ))}
                             </tr>
                         ))}
