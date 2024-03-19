@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4 justify-between">
-      <h1 className="text-2xl font-bold mb-4">Cryptocurrency Data</h1>
+      <h1 className="text-2xl font-bold mb-4">Stocks Data</h1>
       <Table data={cryptoData} />
       <Cards data={cryptoData} />
       <Chart data={chartData} />
