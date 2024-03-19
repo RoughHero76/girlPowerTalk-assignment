@@ -214,6 +214,7 @@ const Table: React.FC<{ data: TableData[] }> = ({ data }) => {
                             </tr>
                         ))}
                     </thead>
+
                     <tbody {...getTableBodyProps()}>
                         {page.map((row) => {
                             prepareRow(row);
